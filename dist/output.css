@@ -1222,13 +1222,19 @@ body{
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
-
-@media (min-width: 640px) {
+/* mulai dirubah dari awalnya min-width ke
+max-width ditambah function tes untuk menghilangkan
+logo besar didepan waktu pake hp */
+@media (max-width: 640px) {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+  .tes{
+    display: none;
+  }
 }
+/* edit selesai */
 
 @media (min-width: 768px) {
   .md\:w-1\/2 {
