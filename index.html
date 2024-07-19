@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KJPP Irfan dan Rekan Cabang Sidoarjo</title>
     <link href="dist/output.css" rel="stylesheet"/>
+    <link rel="icon" type="icon" href="./dist/img/logokjppbagus.png">
 </head>
 <body>
     <!-- Header Start -->
@@ -276,19 +277,20 @@
                     <p class="font-medium text-md text-secondary md:text-lg">Konsultasikan segala bentuk keperluan penilaian aset Anda dengan Kami</p>
                 </div>
             </div>
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
             <div class="w-full lg:w-2/3 lg:mx-auto">
+                <input type="hidden" name="access_key" value="12ef4a4e-aab3-47bb-a3be-c0fbb2f7074b">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base font-bold text-primary">Nama Perusahaan</label>
-                    <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="text" required name="name" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="email" class="text-base font-bold text-primary">Email</label>
-                    <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="email" required name="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="message" class="text-base font-bold text-primary">Pesan</label>
-                    <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
+                    <textarea type="text" required name="message" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
                 </div>
                 <div class="w-full">
                     <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration:500">Kirim</button>
